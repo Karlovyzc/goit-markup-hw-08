@@ -1,0 +1,138 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  > .container {
+    display: flex;
+    height: 80px;
+  }
+}
+
+.header__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  &:focus {
+    color: var(--color-text-blue);
+  }
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.header-menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms var(--timing-function);
+  &:hover {
+    color: var(--color-text-blue);
+  }
+  &:focus {
+    color: var(--color-text-blue);
+  }
+}
+
+.header-menu__linehover {
+  position: relative;
+  display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--color-text-blue);
+    border-radius: 2px;
+    opacity: 0;
+    transition: 250ms;
+    bottom: -33px;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+.header-contacts__mail {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  transition: color 250ms var(--timing-function);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  &:hover {
+    color: var(--color-text-blue);
+  }
+  &:focus {
+    color: var(--color-text-blue);
+  }
+}
+.header-contacts__tel {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms var(--timing-function);
+  &:focus {
+    color: var(--color-text-blue);
+  }
+  &:hover {
+    color: var(--color-text-blue);
+  }
+}
+
+.header-contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.header__hidden {
+  display: none;
+}
+
+.header-mob__button {
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+}
+
+.header-mob__modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: red;
+}
+
+.header-mob__btnclose {
+  display: block;
+  margin-left: auto;
+}

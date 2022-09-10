@@ -1,0 +1,57 @@
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  height: 400px;
+  max-width: 480px;
+  padding-top: 118px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/heromobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/herotablet.jpg);
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/herodesktop.jpg);
+    max-width: 1600px;
+    height: 600px;
+  }
+
+  > .button-blue {
+    padding: 10px 24px;
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+    }
+  }
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-white);
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+}
