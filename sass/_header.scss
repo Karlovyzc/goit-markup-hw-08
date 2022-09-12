@@ -141,6 +141,8 @@
   height: 40px;
   width: 40px;
   margin-left: auto;
+  border-color: transparent;
+  background-color: #ffffff;
 }
 
 .hed-mob__modal {
@@ -198,6 +200,8 @@
 }
 
 .hed-mob__phone {
+  font-style: normal;
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -212,6 +216,8 @@
 }
 
 .hed-mob__email {
+  font-style: normal;
+  font-weight: 500;
   margin-top: 50px;
   font-size: 24px;
   line-height: 1.17;

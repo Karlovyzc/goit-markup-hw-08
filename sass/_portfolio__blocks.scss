@@ -1,8 +1,18 @@
+.portfolio {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+  }
+}
+
 .portfolio-button {
   display: flex;
   margin-bottom: 0;
   margin-top: 0;
-  margin-top: 60px;
   margin-bottom: 40px;
   li:not(:last-child) {
     margin-right: 8px;
@@ -12,6 +22,9 @@
   }
   @media screen and (min-width: 768px) {
     justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
@@ -43,7 +56,6 @@
   flex-wrap: wrap;
   margin-bottom: 0;
   margin-top: 0;
-  margin-bottom: 94px;
 }
 
 .portfolio-blocks__popuptext {
@@ -104,7 +116,7 @@
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
-    &:not(:nth-last-child(-n + 2)) {
+    &:not(:nth-last-child(-n + 1)) {
       margin-bottom: 30px;
     }
   }
