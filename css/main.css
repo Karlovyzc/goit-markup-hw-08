@@ -419,8 +419,14 @@
 }
 
 .benefits {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
 }
 
 .benefits__list {
@@ -437,6 +443,11 @@
 @media screen and (min-width: 1200px) {
   .benefits__list {
     flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__list li {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -469,6 +480,7 @@ h3 {
 
 p {
   margin-top: 10px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
