@@ -96,7 +96,7 @@
   margin-bottom: 10px;
   transition: color 250ms var(--timing-function);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -110,6 +110,7 @@
 @media screen and (min-width: 1200px) {
   .header-contacts__mail {
     margin-right: 30px;
+    font-size: 14px;
   }
 }
 
@@ -117,7 +118,7 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -128,6 +129,11 @@
 }
 .header-contacts__tel:hover {
   color: var(--color-text-blue);
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__tel {
+    font-size: 14px;
+  }
 }
 
 .header-contacts__icon {
@@ -427,13 +433,13 @@
 }
 
 .benefits {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .benefits {
-    margin-top: 90px;
-    margin-bottom: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 }
 
@@ -483,6 +489,11 @@ h3 {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  h3 {
+    text-align: center;
+  }
 }
 
 p {
@@ -907,6 +918,16 @@ p {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 480px) {
+  .footer-feedback__input {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-feedback__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-feedback__input {
     margin-right: 12px;
@@ -932,12 +953,12 @@ p {
   }
 }
 
-.portfolio .container {
+.portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .portfolio .container {
+  .portfolio {
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -1106,6 +1127,7 @@ p {
 @media screen and (max-width: 768px) {
   .portf-btn__mob {
     margin-top: 15px;
+    flex-wrap: wrap;
   }
 }
 

@@ -1,11 +1,9 @@
 .portfolio {
-  .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 }
 
@@ -166,5 +164,6 @@
   display: flex;
   @media screen and (max-width: 768px) {
     margin-top: 15px;
+    flex-wrap: wrap;
   }
 }
