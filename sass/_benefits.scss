@@ -36,6 +36,7 @@
     @media screen and (min-width: 1200px) {
       &:not(:last-child) {
         margin-right: 30px;
+        margin-bottom: 0;
       }
     }
   }
